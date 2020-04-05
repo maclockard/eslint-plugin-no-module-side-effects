@@ -4,15 +4,10 @@
  */
 "use strict";
 
-//------------------------------------------------------------------------------
-// Requirements
-//------------------------------------------------------------------------------
+function noModuleSideEffectsRule() {}
 
-var requireIndex = require("requireindex");
-
-//------------------------------------------------------------------------------
-// Plugin Definition
-//------------------------------------------------------------------------------
-
-// import all rules in lib/rules
-module.exports.rules = requireIndex(__dirname + "/rules");
+export default {
+  rules: {
+    "no-module-side-effects": noModuleSideEffectsRule,
+  },
+};

@@ -29,8 +29,7 @@
   },
   "lint-staged": {
     "./**/*.{ts,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "scripts": {
@@ -40,6 +39,7 @@
     "clean": "rm -rf lib node_modules"
   },
   "dependencies": {
+    "runtypes": "^4.2.0",
     "tslib": "^1.11.1"
   },
   "devDependencies": {

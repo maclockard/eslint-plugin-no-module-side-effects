@@ -1,6 +1,8 @@
 # eslint-plugin-no-module-side-effects
 
-ESLint plugin to prevent module side effects for better tree shaking
+See https://github.com/lukastaegert/eslint-plugin-tree-shaking instead.
+
+<!-- ESLint plugin to prevent module side effects for better tree shaking
 
 ## Installation
 
@@ -40,4 +42,4 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-- Fill in provided rules here
+- Fill in provided rules here -->
