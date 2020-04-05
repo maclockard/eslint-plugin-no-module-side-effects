@@ -1,0 +1,53 @@
+{
+  "name": "eslint-plugin-no-module-side-effects",
+  "version": "0.0.0",
+  "description": "ESLint plugin to prevent module side effects for better tree shaking",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "sideeffects",
+    "treeshaking"
+  ],
+  "url": "https://github.com/maclockard/eslint-plugin-no-module-side-effects",
+  "license": "MIT",
+  "author": "Mac Lockard (https://github.com/maclockard)",
+  "main": "lib/index.js",
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "lib"
+  ],
+  "engines": {
+    "node": "^12.16.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{ts,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "build": "tsc",
+    "watch": "",
+    "clean": "rm -rf lib node_modules"
+  },
+  "dependencies": {
+    "tslib": "^1.11.1"
+  },
+  "devDependencies": {
+    "eslint": "~3.9.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "mocha": "^3.1.2",
+    "prettier": "^2.0.2",
+    "typescript": "^3.8.3"
+  }
+}
